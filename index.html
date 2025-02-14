@@ -32,7 +32,7 @@
         <p>GO FOLLOW HER ON ALL HER <a href="https://sukovt.carrd.co/">SOCIALS</a> OR I'LL CHASE YOU DOWN GRRRRRRRR!!!!</p>
         <p>SUPPORT THE ARTISTS, CLICK ON THE PICTURE TO GO TO THE SOURCE!!!</p>
         <label class="switch">
-          <input type="checkbox" id="NSFWtoggle">
+          NSFW Art?<input type="checkbox" id="NSFWtoggle">
           <span class="slider"></span>
         </label>
         <section>
@@ -116,9 +116,9 @@
       const NSFW = document.getElementById('NSFW');
       NSFWtoggle.addEventListener('change', function() {
         if(NSFWtoggle.checked) {
-          NSFW.classList.add("visible");
+          NSFW.style.display("block");
         } else {
-          NSFW.classList.remove("visible");}
+          NSFW.style.display("none");}
       });
     </script>
   </body>
