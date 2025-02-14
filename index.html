@@ -31,6 +31,10 @@
       <section>
         <p>GO FOLLOW HER ON ALL HER <a href="https://sukovt.carrd.co/">SOCIALS</a> OR I'LL CHASE YOU DOWN GRRRRRRRR!!!!</p>
         <p>SUPPORT THE ARTISTS, CLICK ON THE PICTURE TO GO TO THE SOURCE!!!</p>
+        <label class="switch">
+          <input type="checkbox" id="NSFWtoggle">
+          <span class="slider"></span>
+        </label>
         <section>
           <h1 id="SFW">SFW</h1>
           <a href="https://x.com/azuxxrou/status/1839911434249199843"><img alt="Suko and Numi" src="https://pbs.twimg.com/media/GYitgipasAIjVmv?format=jpg&name=4096x4096"></a>
@@ -94,7 +98,7 @@
           <a href="https://x.com/DreynnKAS/status/1756448562429186237"><img alt="wario holds arielle and suko" src="https://pbs.twimg.com/media/GGAojWxXUAAzMxf?format=jpg&name=small"></a>
           <a href=""></a>
         </section>
-        <section>
+        <section id="NSFW">
           <h1 id="NSFW">NSFW</h1>
           <a href="https://x.com/deluxe_rosie/status/1843035428473229693"><img alt="suko bunny outfit NSFW" src="https://pbs.twimg.com/media/GZPG33IXIAAqg6i?format=jpg&name=small"></a>
           <a href="https://x.com/deluxe_rosie/status/1857181717481607375"><img alt="suko and rosie kissy kissy" src="https://pbs.twimg.com/media/GcXm_5_XAAAlDin?format=jpg&name=small"></a>
@@ -107,5 +111,15 @@
           <a href=""></a>
         </section>
       </section>
+    <script>
+      const NSFWtoggle = document.getElementById('NSFWtoggle');
+      const NSFW = document.getElementById('NSFW');
+      NSFWtoggle.addEventListener('change', function() {
+        if(NSFWtoggle.checked) {
+          NSFW.classList.add("visible");
+        } else {
+          NSFW.classList.remove("visible");}
+      });
+    </script>
   </body>
 </html>
