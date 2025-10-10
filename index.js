@@ -4,8 +4,6 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-const allowedOrigins = ['https://yourfrontend.com', 'https://anotherdomain.com'];
-
 app.use(cors());
 
 
@@ -20,4 +18,5 @@ app.get('/killer', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`API is running at http://localhost:${PORT}`);
+
 });
