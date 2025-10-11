@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+// app.use(cors());
 
 
 // Your list of options
@@ -20,3 +20,4 @@ app.listen(PORT, () => {
   console.log(`API is running at http://localhost:${PORT}`);
 
 });
+
