@@ -4,12 +4,12 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-app.use(cors({
+/*app.use(cors({
   origin: 'https://your-github-username.github.io',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
-}));
+}));*/
 
 
 
@@ -26,5 +26,6 @@ app.listen(PORT, () => {
   console.log(`API is running at http://localhost:${PORT}`);
 
 });
+
 
 
